@@ -30,14 +30,14 @@ function App() {
         <div
           className={`dark:bg-main-bg bg-main-bg min-h-screen w-full ${activeMenu ? "md:ml-72" : "flex-2"} `}
         >
-          <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
+          <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
             Navbar
           </div>
           <div>
             <Routes>
               {/* dashboard  */}
-              <Route path="/" element="Ecommerce" />
-              <Route path="/ecommerce" element="Ecommerce" />
+              <Route path="/" element="ECommerce" />
+              <Route path="/ecommerce" element="ECommerce" />
 
               {/* pages  */}
               <Route path="/orders" element="Orders" />
