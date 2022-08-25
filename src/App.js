@@ -21,10 +21,12 @@ import {
   ColorMapping,
   Editor,
 } from "./Pages";
+import { useStateContext } from "./contexts/ContextProvider";
+
 import "./App.css";
 
 function App() {
-  const activeMenu = true;
+  const { activeMenu } = useStateContext();
   return (
     <BrowserRouter>
       <div className="flex relative dark:bg-main-dark-bg">
