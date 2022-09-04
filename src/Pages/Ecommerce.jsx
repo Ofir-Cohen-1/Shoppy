@@ -84,6 +84,11 @@ const Ecommerce = () => {
                 </p>
                 <p className="text-gray-500 mt-1">Budget</p>
               </div>
+              <div className="mt-8">
+                <p className="text-3xl font-semibold">$48,487</p>
+
+                <p className="text-gray-500 mt-1">Expense</p>
+              </div>
             </div>
           </div>
         </div>
