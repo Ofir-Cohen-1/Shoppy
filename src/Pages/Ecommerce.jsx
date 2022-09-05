@@ -8,6 +8,7 @@ import {
   ecomPieChartData,
 } from "../data/dummyData";
 import { useStateContext } from "../contexts/ContextProvider";
+import { Sparklines, SparklinesLine } from "react-sparklines";
 
 const Ecommerce = () => {
   return (
@@ -54,7 +55,7 @@ const Ecommerce = () => {
           ))}
         </div>
       </div>
-      <div flex gap-10 flex-wrap justify-center>
+      <div className="flex gap-10 flex-wrap justify-center">
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780  ">
           <div className="flex justify-between">
             <p className="font-semibold text-xl">Revenue Updates</p>
@@ -90,15 +91,21 @@ const Ecommerce = () => {
                 <p className="text-gray-500 mt-1">Expense</p>
               </div>
               <div className="mt-5">
-                <SparkLine
+                <Sparklines data={[5, 10, 5, 20]}>
+                  <SparklinesLine color="blue" />
+                </Sparklines>
+                {/* <SparkLine
                   currentColor="blue"
-                  id="line-sparkLine"
+                  id="line-sparkline"
                   type="Line"
                   height="80px"
                   width="250px"
                   data={SparklineAreaData}
                   color="blue"
-                />
+                /> */}
+              </div>
+              <div className="mt-10">
+                <Button color="white" bgcolor="blue" text="Download"></Button>
               </div>
             </div>
           </div>
