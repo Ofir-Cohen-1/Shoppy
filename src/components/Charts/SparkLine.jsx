@@ -9,7 +9,7 @@ import { Sparklines } from 'react-sparklines';
 
 const SparkLine = ({ id, height, width, color, data, type, currentColor }) => {
   return (
-    <Sparklines data={[5, 10, 5, 20, 8, 15]} limit={5} width={100} height={20} margin={5}>
+    <Sparklines id={id} height={height} data={[5, 10, 5, 20, 8, 15]} limit={5} width={100} height={20} margin={5}>
 </Sparklines>
     // <SparklineComponent
     //   id={id}
