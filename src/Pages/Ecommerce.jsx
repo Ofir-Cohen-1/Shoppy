@@ -91,7 +91,7 @@ const Ecommerce = () => {
                 <p className="text-gray-500 mt-1">Expense</p>
               </div>
               <div className="mt-5">
-                <Sparklines data={[5, 10, 5, 20]}>
+                <Sparklines data={[5, 15, 10, 5, 20]}>
                   <SparklinesLine color="blue" />
                 </Sparklines>
                 {/* <SparkLine
